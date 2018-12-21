@@ -24,4 +24,4 @@ import formatter from 'ic-formatter'
 ## License
 
 MIT © [TOC-TEAM](https://github.com/TOC-TEAM)
-# ic-formateer
+# ic-formatter
