@@ -18,7 +18,7 @@ npm install --save ic-formatter
 ## Usage
 
 ```js
-import ic-formatter from 'ic-formatter'
+import formatter from 'ic-formatter'
 ```
 
 ## License
