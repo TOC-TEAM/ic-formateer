@@ -1,41 +1,4 @@
-import {formatDate, beforeToday,birthToAge} from '../src'
-
-describe('date test', () => {
-  test('default format', () => {
-    const result = formatDate(1545036108942);
-    expect(result).toBe('2018/12/17')
-  });
-  test('format yyyy-MM', ()=>{
-    const result1 = formatDate(1545036108942, 'yyyy-MM');
-    const result2 = formatDate(1545036108942, 'yyyy-MM-dd');
-    const result3 = formatDate(1545036108942, 'yyyy-MM-dd HH:mm');
-    const result4 = formatDate(1545036108942, 'yyyy-MM-dd HH:mm:ss');
-    const result5 = formatDate(1545036108942, 'yyyy/MM');
-    const result6 = formatDate(1545036108942, 'yyyy/MM/dd');
-    const result7 = formatDate(1545036108942, 'yyyy/MM/dd HH:mm');
-    const result8 = formatDate("1545036108942", 'yyyy/MM/dd HH:mm:ss');
-    const result9 = formatDate(1545036108942, 'yyyy.MM');
-    const result10 = formatDate(1545036108942, 'yyyy.MM.dd');
-    const result11 = formatDate(1545036108942, 'yyyy.MM.dd HH:mm');
-    const result12 = formatDate(1545036108942, 'yyyy.MM.dd HH:mm:ss');
-    const result13 = formatDate('string', 'yyyy.MM.dd' +
-      ' HH:mm:ss');
-
-    expect(result1).toBe('2018-12');
-    expect(result2).toBe('2018-12-17');
-    expect(result3).toBe('2018-12-17 16:41');
-    expect(result4).toBe('2018-12-17 16:41:48');
-    expect(result5).toBe('2018/12');
-    expect(result6).toBe('2018/12/17');
-    expect(result7).toBe('2018/12/17 16:41');
-    expect(result8).toBe('2018/12/17 16:41:48');
-    expect(result9).toBe('2018.12');
-    expect(result10).toBe('2018.12.17');
-    expect(result11).toBe('2018.12.17 16:41');
-    expect(result12).toBe('2018.12.17 16:41:48');
-    expect(result13).toBe('string');
-  })
-});
+import { beforeToday,birthToAge} from '../src'
 
 describe('bafore now',()=>{
   test('now before now', ()=>{
