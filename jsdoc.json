@@ -1,0 +1,20 @@
+{
+  "source": {
+    "include": ["src/"],
+    "includePattern": ".js$"
+  },
+  "opts": {
+    "destination": "docs/",
+    "template": "",
+    "package": "package.json",
+    "recurse": true,
+    "tutorials": "",
+    "encoding": "utf8"
+  },
+  "templates": {},
+  "plugins": ["plugins/markdown"],
+  "markdown": {
+    "tags": ["example"],
+    "idInHeadings": true
+  }
+}
